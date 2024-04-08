@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    int num1, num2, resultado;
+    char operacao;
+    
+    printf("Digite a operação desejada, sendo +, -, *, /: ");
+    scanf("%c", &operacao);
+    
+    printf("Digite um número: ");
+    scanf("%d", &num1);
+    
+    printf("Digite um número: ");
+    scanf("%d", &num2);
+    
+    switch (operacao)
+    {
+        case '+':
+            resultado = num1 + num2;
+            printf("%d %c %d = %d", num1, operacao, num2, resultado);
+            break;
+        case '-':
+            resultado = num1 - num2;
+            printf("%d %c %d = %d", num1, operacao, num2, resultado);
+            break;
+        case '*':
+            resultado = num1 * num2;
+            printf("%d %c %d = %d", num1, operacao, num2, resultado);
+            break;
+        case '/':
+            resultado = num1 / num2;
+            printf("%d %c %d = %d", num1, operacao, num2, resultado);
+            break;
+        default: 
+            printf("Operação inválida!");
+    }
+    return 0;
+}
+
