@@ -1,0 +1,78 @@
+#include <stdio.h>
+
+int main()
+{
+    int codigo, quantidade;
+    float total;
+    
+    printf("Seja bem vindo!\nAqui está o cardápio:\n");
+    printf("\n");
+    
+    printf("Cachorro quente - Código: 100 - Preço: R$ 1,20\n");
+    printf("Bauru simples - Código: 101 - Preço: R$ 1,30\n");
+    printf("Bauru com ovo - Código: 102 - Preço: R$ 1,50\n");
+    printf("Hamburguer - Código: 103 - Preço: R$ 1,20 \n");
+    printf("Cheeseburguer - Código: 104 - Preço: R$ 1,70\n");
+    printf("Suco - Código: 105 - Preço: R$ 2,20\n");
+    printf("Refrigerante - Código: 106 - Preço: R$ 1,20\n");
+    printf("Digite 0 para sair\n");
+    printf("\n");
+    
+    printf("Digite o código do produto desejado: ");
+    scanf("%d", &codigo);
+    printf("\n");
+    
+    switch (codigo) 
+    {
+        case 100:
+            printf("Digite a quntidade desejada: ");
+            scanf("%d", &quantidade);
+            total = 1.20 * quantidade;
+            printf("O preço total do cachorro quente foi de R$ %.2f\n", total);
+            break;
+        case 101:
+            printf("Digite a quntidade desejada: ");
+            scanf("%d", &quantidade);
+            total = 1.30 * quantidade;
+            printf("O preço total do bauro simples foi de R$ %.2f\n", total);
+            break;
+        case 102:
+            printf("Digite a quntidade desejada: ");
+            scanf("%d", &quantidade);
+            total = 1.50 * quantidade;
+            printf("O preço total do bauro com ovo foi de R$ %.2f\n", total);
+            break;
+        case 103:
+            printf("Digite a quntidade desejada: ");
+            scanf("%d", &quantidade);
+            total = 1.20 * quantidade;
+            printf("O preço total do hamburguer foi de R$ %.2f\n", total);
+            break;
+        case 104:
+            printf("Digite a quntidade desejada: ");
+            scanf("%d", &quantidade);
+            total = 1.70 * quantidade;
+            printf("O preço total do cheeseburguer foi de R$ %.2f\n", total);
+            break;
+        case 105:
+            printf("Digite a quntidade desejada: ");
+            scanf("%d", &quantidade);
+            total = 2.20 * quantidade;
+            printf("O preço total do suco foi de R$ %.2f\n", total);
+            break;
+        case 106:
+            printf("Digite a quntidade desejada: ");
+            scanf("%d", &quantidade);
+            total = 1.00 * quantidade;
+            printf("O preço total do refrigerante foi de R$ %.2f\n", total);
+            break;
+            
+        default: if (codigo == 0) {
+            printf("Obrigado, volte sempre!");
+        }
+    }
+
+    return 0 ;
+}
+
+
